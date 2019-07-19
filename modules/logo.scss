@@ -1,0 +1,38 @@
+$mq-1: 48em !default; /* 768px / 16px = 48em */
+@mixin extra-small-only {
+	@media only screen and (max-width: $mq-1 - 0.0625) {
+		@content;
+	}
+}
+@mixin small-and-above {
+	@media only screen and (min-width : $mq-1) {
+		@content;
+	}
+}
+
+/***************************
+Logo Modules
+***************************/
+
+.logo {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.logo-primary {
+  width: 64px;
+  height: 64px;
+  @include small-and-above {
+  	width: auto;
+  	height: 50px;
+  	float: left;
+  }
+}
+.logo-primary img {
+  height: 100%;
+}
+
+.logo {
+	overflow: hidden;
+	display: inline-block;
+}

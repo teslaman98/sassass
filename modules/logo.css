@@ -1,0 +1,25 @@
+/* 768px / 16px = 48em */
+/***************************
+Logo Modules
+***************************/
+.logo {
+  overflow: hidden;
+  display: inline-block; }
+
+.logo-primary {
+  width: 64px;
+  height: 64px; }
+  @media only screen and (min-width: 48em) {
+    .logo-primary {
+      width: auto;
+      height: 50px;
+      float: left; } }
+
+.logo-primary img {
+  height: 100%; }
+
+.logo {
+  overflow: hidden;
+  display: inline-block; }
+
+/*# sourceMappingURL=logo.css.map */
